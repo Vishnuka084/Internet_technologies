@@ -5,21 +5,27 @@
     <title>Combinators</title>
 <!--  Meta style    -->
     <style>
-        /*    01      child combinators - select direct h1 childs of the body */
+        /*    01      child combinators - [  >  ]select direct h1 childs of the body */
 
      /*   section > h1 {
             color: red;
         }
 */
 
-        /*    02       Descendent combinators*/
-        body h1 {
+        /*    02       Descendent combinators  [ space ] h1 can be inside any where in a section -no need to be a direct child */
+      /*  body h1 {
             color: red;
         }
+*/
 
 
-
-        /*    03       Adjacent combinators*/
+        /*    03       Adjacent combinators   [ + ]*/
+        
+        h1+ul{
+            color: #8711ee;
+        }
+        
+        
         /*    04       general sibling combinators*/
 
 
