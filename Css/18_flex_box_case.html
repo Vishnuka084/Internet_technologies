@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex-Box-cases</title>
+    <style>
+        section{
+            border: 1px solid red;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        section > div {
+            box-shadow: 1px 2px 3px 2px black;
+            height: 150px;
+            width: 150px;
+        }
+
+        section > div:nth-child(1){
+            background-color: red;
+            align-self: self-start;
+        }
+        section > div:nth-child(2){
+            background-color: #8711ee;
+
+        }
+        section > div:nth-child(3){
+            background-color: greenyellow;
+            align-self: self-end;
+        }
+        section > div:nth-child(4){
+            background-color: indianred;
+            align-self: self-start;
+        }
+        section > div:nth-child(5){
+            background-color: orchid;
+        }
+        section > div:nth-child(6){
+            background-color: blue;
+            align-self: self-end;
+        }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+    <div>E</div>
+    <div>F</div>
+</section>
+</body>
+</html>
