@@ -10,14 +10,42 @@
         /*there are  two types of elements
 
             01.block level elements- get the parent full with
+                                      box model ok
+                                      vertically on after another
 
             02.inline element-only get the content space
+                               width & height  not working
+                               no line breaks
+                               box model not working property
+
+
+
+             03.inline block -
+                              Intermediate level of inline and block level
+                              width 7 HEIGHT WORKS
+                              box model works
+                              no line breaks.
+                              hold only content space
        */
+
+
+
+    /*   we can change the default behavior of element */
+        h1{
+          display: inline /*block /line block*/;
+        }
+
+        li{
+          display: inline;
+          padding-right: 10px;
+        }
     
   </style>
 </head>
 <body>
 
+<h1>Hello There .... css</h1>
+<h1>Hello There .... css</h1>
 <h1>Hello There .... css</h1>
 <img src="../Css/assets/img/img01.jpg" alt="">
 <img src="../Css/assets/img/img2.jpg" alt="">
