@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animations</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            background-color: #f1ca4a;
+            animation-name: my-animation;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes my-animation {
+            0%{
+                background-color: #57e510;
+            }
+            25%{
+                background-color: #1457ff;
+            }
+            50%{
+                background-color: #e90807;
+            }
+            75%{
+                background-color: darkturquoise;
+            }
+            100%{
+                background-color: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div>
+
+</div>
+
+</body>
+</html>
