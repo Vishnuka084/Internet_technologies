@@ -35,8 +35,19 @@
     document.getElementsByTagName(""); -----> select elements by element (HTMl collection )
     document.querySelector("");  ------> select only one element from the machings , can use css selectors
 
-
     */
+
+    /* remove element */
+    document.getElementById("h1ID").remove();
+
+    /* getting texts  */
+    document.getElementsByClassName("h1Clz")[0].innerText;
+
+    /* changing texts */
+    document.getElementsByClassName("h1Clz")[0].innerText="Text changed";
+
+    /* changing styles */
+    document.getElementsByClassName("h1Clz")[0].style.color="blue";
 
 
 </script>
