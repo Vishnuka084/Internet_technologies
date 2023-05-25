@@ -7,7 +7,7 @@
     <style>
         img{
             border: 1px solid black;
-            width: 100px;
+            width: 200px;
         }
     </style>
 </head>
@@ -22,7 +22,7 @@
 <h2 name="c">What is a DOM...?</h2>
 <h3>Institute of Software Engineering </h3>
 
-<img src="https://www.coursenet.lk/Content/courses/22856/690921520190407.png" alt="Image" width="200px">
+<img src="" alt="Image" width="200px">
 
 <input  name="b" placeholder="Input Something" type="text" >
 
@@ -83,6 +83,12 @@
             //01.select the button and set a click event
             //02.then select the input field and then get the typed text
             //03.select the image and then set the typed value for the src attribute
+
+    document.querySelector('button').addEventListener('click',function () {
+       document.querySelector('img').setAttribute("src",document.querySelector('input').value);
+    });
+
+
 </script>
 
 </body>
