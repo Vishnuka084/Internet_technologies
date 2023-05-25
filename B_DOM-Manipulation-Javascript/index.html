@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM-Manipulation</title>
+
+    <style>
+        img{
+            border: 1px solid black;
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
 <h1 id="h1ID">Hello Java Script</h1>
@@ -14,6 +21,9 @@
 <h1 name="a">Hello Java Script</h1>
 <h2 name="c">What is a DOM...?</h2>
 <h3>Institute of Software Engineering </h3>
+
+<img src="https://www.coursenet.lk/Content/courses/22856/690921520190407.png" alt="Image" width="200px">
+
 <input  name="b" placeholder="Input Something" type="text" >
 
 <ul>
@@ -49,7 +59,30 @@
     /* changing styles */
     document.getElementsByClassName("h1Clz")[0].style.color="blue";
 
+    /* ---------  how to get src(attr) values
 
+                    getAttribute(param1);
+                    setAttribute(param1, param2);
+
+     */
+
+    /*  how to get a value form text fields    */
+
+        //document.querySelector('input').value("C001"); ---> setting values
+        //document.querySelector('input').value; -----> getting values
+
+
+    /* how to write  an event for a button
+        document.querySelector('button').addEventListener('click',function (){
+            alert("How are you")
+        });
+    */
+
+    /* get the text field value and set is to the image source */
+
+            //01.select the button and set a click event
+            //02.then select the input field and then get the typed text
+            //03.select the image and then set the typed value for the src attribute
 </script>
 
 </body>
