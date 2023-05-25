@@ -91,9 +91,12 @@
 
 
     document.querySelector('#type').addEventListener("keyup",function (){
-       document.querySelector("#type").value;
+       //document.querySelector("#type").value; //return typed value in the text field
 
-       console.log(document.querySelector("#type").value);
+       //console.log(document.querySelector("#type").value);
+
+
+        //select h1 and set  the typed text of input field
        document.querySelector("h1").innerText=document.querySelector("#type").value;
     });
 
