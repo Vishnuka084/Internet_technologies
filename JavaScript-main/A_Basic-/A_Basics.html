@@ -36,33 +36,47 @@
 
                         <<<<<<<<<  in java script    >>>>>>>>>>>
     */
-    var name = "Hello";
-    typeof  name; //string
-    alert(name);
+    //var name = "Hello";
+    //typeof  name; //string
+    //alert(name);
 
     /* <----  why js is known as loosely type language ---- > */
-    var name=10; //in here no data type defined before creating the variable,
+    //var name=10; //in here no data type defined before creating the variable,
     //so we can  be assigned anything that we want for the age
     //Because,js is loosely typed language
 
 
     //So why js in Dynamic Typing
-    var mySalary = 10000.99;
-    typeof mySalary; // number //->> after assign value for the first time,I will get the type of that value
+    //var mySalary = 10000.99;
+    //typeof mySalary; // number //->> after assign value for the first time,I will get the type of that value
 
 
     // then after that  can be changed it ...?
-    mySalary =true; //assigned another type of value to the previously created variable
-    typeof mySalary; //boolean [now it is changed to boolean ]
+    //mySalary =true; //assigned another type of value to the previously created variable
+    //typeof mySalary; //boolean [now it is changed to boolean ]
 
 
 
     //let's  changed it again
-    mySalary = "No Salary"
-    typeof mySalary; //string [now it is changed to string ]// always dynamically its data type
+   // mySalary = "No Salary"
+    //typeof mySalary; //string [now it is changed to string ]// always dynamically its data type
 
 
     //this is why js is known as dynamic scripting language
+
+
+    /* So , what the trouble we have to face by creating variables using var declaration ype */
+    var  myState =false;
+    var myState= true; // can duplicate the identifires
+
+    //Does not satisfy the scope
+    var myTp=1199;
+    {
+        console.log(myTp); // this is legal
+        var muAge = 100;
+    }
+
+    console.log(muAge); //this soud not accecibke  ,but it is
 
 </script>
 
