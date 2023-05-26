@@ -66,17 +66,31 @@
 
 
     /* So , what the trouble we have to face by creating variables using var declaration ype */
-    var  myState =false;
-    var myState= true; // can duplicate the identifires
+    //var  myState =false;
+    //var myState= true; // can duplicate the identifires
 
     //Does not satisfy the scope
-    var myTp=1199;
-    {
+    //var myTp=1199;
+    /*{
         console.log(myTp); // this is legal
         var muAge = 100;
     }
 
-    console.log(muAge); //this should be not accessible  ,but it is
+    console.log(muAge);*/ //this should be not accessible  ,but it is accessible
+
+
+
+    //so what are the special features in var ..?
+    //hoisting - you can use a variable which is going to be later initialized
+   /* console.log(x);
+    var x = 100;
+    console.log(x);
+*/
+
+
+    //what are the other ways that we have to create variables in js
+    let myName='kasun'
+    console.log(myName);
 
 </script>
 
