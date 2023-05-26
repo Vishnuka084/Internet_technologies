@@ -21,7 +21,7 @@
     <li class="list">RWAD</li>
 </ul>
 
-<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, at!</h2>
+<h2 id="lasth2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, at!</h2>
 
 <script src="assets/js/jquery-3.7.0.min.js"></script>  <!--import jQuery libary-->
 
@@ -71,9 +71,22 @@
 
 
 
-   // what about grouping selector
+   // -------- > what about grouping selector
 
-   $('h1,h2').css('color','red'); //working
+    //   $('h1,h2').css('color','red'); //working
+
+
+
+
+   //how to remove an element from dom using jQuery
+    $('p').remove();//this is how to do it using jQuery
+
+   //how to  get the text of an element
+    $('#lasth2').text();//return the text of selected h1
+
+
+   //how to set the text of an element
+   $('#lasth2').text("How to set the text of an element");
 
 </script>
 </body>
