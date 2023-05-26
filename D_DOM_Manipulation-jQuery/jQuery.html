@@ -17,7 +17,7 @@
 <ul>
     <li>GDSE</li>
     <li class="list">cmjd</li>
-    <li>ijse</li>
+    <li id="l3">ijse</li>
     <li class="list">RWAD</li>
 </ul>
 
@@ -48,6 +48,10 @@
     $('#para').css('font-size','30px'); //(id selector is also working)
 
     $('.list').css('color','orange');
+
+    $('[id]').css('border','2px solid red'); //attribute selector
+
+    $('li:first-child').css('color','blue');
 
 </script>
 </body>
