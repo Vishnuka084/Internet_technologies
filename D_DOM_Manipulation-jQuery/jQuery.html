@@ -8,7 +8,7 @@
 <h1>jQuery.....!</h1>
 <h1>jQuery....Hello .</h1>
 <h2>What is jQuery and How it works.....?</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis deleniti ducimus fuga, officiis repellat repellendus sequi sint suscipit voluptates!</p>
+<p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis deleniti ducimus fuga, officiis repellat repellendus sequi sint suscipit voluptates!</p>
 
 
 <input  name="b" placeholder="Input Something" type="text" >
@@ -16,9 +16,9 @@
 
 <ul>
     <li>GDSE</li>
-    <li>cmjd</li>
+    <li class="list">cmjd</li>
     <li>ijse</li>
-    <li>RWAD</li>
+    <li class="list">RWAD</li>
 </ul>
 
 <script src="assets/js/jquery-3.7.0.min.js"></script>  <!--import jQuery libary-->
@@ -32,14 +32,22 @@
 
     $('h1').css('color','blue');
 
-    /* we can also changed the selector as we wanted*/
-    var RS = jQuery.noConflict();
+    /*    ------   we can also change the selector as we wanted ------ */
+    //var RS = jQuery.noConflict();
 
     //$();// not recognised
 
-  // RS(); -->now you have to use this way to select element
+   // RS(); -->now you have to use this way to select element
 
-   RS("h2").css('color','green');
+   //RS("h2").css('color','green');
+
+
+   /*----what we can put inside jQuery selector -------*/
+    $('h1').css('color','green'); //select all h1 in the dom and apply the color(type selector)
+
+    $('#para').css('font-size','30px'); //(id selector is also working)
+
+    $('.list').css('color','orange');
 
 </script>
 </body>
