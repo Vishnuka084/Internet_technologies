@@ -89,19 +89,20 @@
 
 
     //what are the other ways that we have to create variables in js
-    let myName='kasun'
+    /*let myName='kasun'
     console.log(myName);
-
+*/
     //so ,what's new about let ...?
     //let myName='nimal'; //error //identifier 'myName' has already
 
     //so ,what about scope problem
-    {
+    /*{
         console.log(myName);
-    }
+    }*/
 
     //console.log(myAge); //error // now this is not accessible
 
+/*
 
     let age = 10;
     console.log(typeof age);
@@ -114,15 +115,44 @@
     console.log(x);
     let x = 100;//not working
 
-
-
+*/
 
 
 
     //In let declaration we cannot duplicate identifiers
     //Scope is satisfied
+    //Dynamic Typing Support
+    //Not supporting for hoisting
 
 
+
+
+    //Rules for Identifiers  (variable Names)
+    //are they case-sensitive.?
+    var myname="Dasun";
+    var MYNAME="Ramal";
+    console.log(myname);//Dasun
+    console.log(MYNAME);//Ramal  [it's case-sensitive]
+
+    /*
+    * the first letter should be a-z , $ or _
+    * */
+
+
+
+    var $myName='ijse';
+    console.log($myName);
+
+    var _myName = 'Panadura'
+    console.log(_myName)
+
+
+    var azAnyletter = 'hi'
+    console.log(azAnyletter)
+
+
+    var my19990 = 'Age'
+    console.log(my19990)
 
 </script>
 
