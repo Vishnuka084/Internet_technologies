@@ -13,9 +13,9 @@
 </head>
 <body>
 
-<img id="imgone" src="https://blog.ijse.lk/web/blog/wp-content/uploads/2019/09/IMG_2086.jpg" alt="" width="400">
-<img id="imgtwo" src="https://www.ijse.lk/images/logos/ijse.png" alt="" width="400px">
-<img id="imgthree" src="https://blog.ijse.lk/web/blog/wp-content/uploads/2019/09/1.jpg" alt="" width="400px">
+<img id="imgone" src="https://www.ijse.lk/images/gdse/ijse-path.jpg" alt="" >
+<img id="imgtwo" src="https://www.ijse.lk/images/logos/ijse.png" alt="" >
+<img id="imgthree" src="https://blog.ijse.lk/web/blog/wp-content/uploads/2019/09/1.jpg" alt="" >
 <br>
 <button id="btnone">First button</button>
 <button id="btntwo">Second Button</button>
@@ -125,14 +125,20 @@
     //02.bind click event for those buttons
     document.getElementById('btnone').addEventListener('click',function (){
         document.getElementById("imgone").style.display='none';
+        document.getElementById("imgtwo").style.display='inline-block';
+        document.getElementById("imgthree").style.display='inline-block';
 
     });
     document.getElementById('btntwo').addEventListener('click',function (){
         document.getElementById("imgtwo").style.display='none';
+        document.getElementById("imgone").style.display='inline-block';
+        document.getElementById("imgthree").style.display='inline-block';
 
     });
     document.getElementById('btnthree').addEventListener('click',function (){
         document.getElementById("imgthree").style.display='none';
+        document.getElementById("imgtwo").style.display='inline-block';
+        document.getElementById("imgone").style.display='inline-block';
 
     });
 
