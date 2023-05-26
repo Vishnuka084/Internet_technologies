@@ -6,6 +6,41 @@
 </head>
 <body>
 <h1>jQuery.....!</h1>
+<h1>jQuery....Hello .</h1>
 <h2>What is jQuery and How it works.....?</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis deleniti ducimus fuga, officiis repellat repellendus sequi sint suscipit voluptates!</p>
+
+
+<input  name="b" placeholder="Input Something" type="text" >
+<button>Test</button>
+
+<ul>
+    <li>GDSE</li>
+    <li>cmjd</li>
+    <li>ijse</li>
+    <li>RWAD</li>
+</ul>
+
+<script src="assets/js/jquery-3.7.0.min.js"></script>  <!--import jQuery libary-->
+
+
+<script>
+
+   // document.querySelector('h1').style.color="red"; //js way
+
+   $('h1');//this is how to select an element in jquery
+
+    $('h1').css('color','blue');
+
+    /* we can also changed the selector as we wanted*/
+    var RS = jQuery.noConflict();
+
+    //$();// not recognised
+
+  // RS(); -->now you have to use this way to select element
+
+   RS("h2").css('color','green');
+
+</script>
 </body>
 </html>
