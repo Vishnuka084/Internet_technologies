@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/javascript/A_Basic_JavaScript.iml" filepath="$PROJECT_DIR$/javascript/A_Basic_JavaScript.iml" />
-      <module fileurl="file://$PROJECT_DIR$/B_DOM-Manipulation-Javascript/B_DOM-Manipulation-Javascript.iml" filepath="$PROJECT_DIR$/B_DOM-Manipulation-Javascript/B_DOM-Manipulation-Javascript.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javascript/B_DOM-Manlpulation.iml" filepath="$PROJECT_DIR$/javascript/B_DOM-Manlpulation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javascript/B_DOW_Manlpulations.iml" filepath="$PROJECT_DIR$/javascript/B_DOW_Manlpulations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaScript-main/javascript/A_Basic.iml" filepath="$PROJECT_DIR$/JavaScript-main/javascript/A_Basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaScript-main/B_DOM-Manipulation-Javascript/B_DOM-Manipulation-Javascript.iml" filepath="$PROJECT_DIR$/JavaScript-main/B_DOM-Manipulation-Javascript/B_DOM-Manipulation-Javascript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaScript-main/javascript/B_DOM-Manlpulation.iml" filepath="$PROJECT_DIR$/JavaScript-main/javascript/B_DOM-Manlpulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaScript-main/javascript/B_DOW_Manlpulations.iml" filepath="$PROJECT_DIR$/JavaScript-main/javascript/B_DOW_Manlpulations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaScript-main/C_POS/C_POS.iml" filepath="$PROJECT_DIR$/JavaScript-main/C_POS/C_POS.iml" />
       <module fileurl="file://$PROJECT_DIR$/Css/Css.iml" filepath="$PROJECT_DIR$/Css/Css.iml" />
-      <module fileurl="file://$PROJECT_DIR$/D_DOM_Manipulation-jQuery/D_DOM_Manipulation-jQuery.iml" filepath="$PROJECT_DIR$/D_DOM_Manipulation-jQuery/D_DOM_Manipulation-jQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaScript-main/D_DOM_Manipulation-jQuery/D_DOM_Manipulation-jQuery.iml" filepath="$PROJECT_DIR$/JavaScript-main/D_DOM_Manipulation-jQuery/D_DOM_Manipulation-jQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/Html/Html.iml" filepath="$PROJECT_DIR$/Html/Html.iml" />
       <module fileurl="file://$PROJECT_DIR$/Internet_Technologys.iml" filepath="$PROJECT_DIR$/Internet_Technologys.iml" />
     </modules>
