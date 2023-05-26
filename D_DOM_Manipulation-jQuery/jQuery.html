@@ -12,7 +12,9 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto consectetur dignissimos fuga ipsa iste itaque iure laudantium, nihil, officiis quis repellat, vero vitae. Dolorem eveniet magni nesciunt quaerat vero.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda error exercitationem fuga iure molestias nisi unde. Commodi, eos harum laudantium minima nisi omnis, quas, quia repellendus sequi similique sunt?</p>
 <input  name="b" placeholder="Input Something" type="text" >
+<!--
 <button>Test</button>
+-->
 
 <ul>
     <li>GDSE</li>
@@ -123,14 +125,32 @@
 
    //how to add elements to dom
    //append
+
+
+   $('ul').append("<li>A</li>");
+   $('ul').append("<li>A</li>");
+
    //prepend
-
-   $('ul').append("<li>A</li>");
-   $('ul').append("<li>A</li>");
-
    $('ul').prepend("<li>C</li>");
    $('ul').prepend("<li>D</li>");
 
+
+
+   //first select the button and add a click event
+   $('#btnOne').click(function (){
+      $('#txtInpt').val();
+
+      //add to list
+       $('ul').prepend('<li>'+$('#txtInpt').val()+'</li>');
+
+   });
+
+   $('#btnTwo').click(function (){
+       ;
+
+       $('ul').append('<li>'+$('#txtInpt').val()+'</li>');
+
+   });
 
 </script>
 </body>
