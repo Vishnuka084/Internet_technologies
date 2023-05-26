@@ -9,8 +9,8 @@
 <h1>jQuery....Hello .</h1>
 <h2>What is jQuery and How it works.....?</h2>
 <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis deleniti ducimus fuga, officiis repellat repellendus sequi sint suscipit voluptates!</p>
-
-
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto consectetur dignissimos fuga ipsa iste itaque iure laudantium, nihil, officiis quis repellat, vero vitae. Dolorem eveniet magni nesciunt quaerat vero.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda error exercitationem fuga iure molestias nisi unde. Commodi, eos harum laudantium minima nisi omnis, quas, quia repellendus sequi similique sunt?</p>
 <input  name="b" placeholder="Input Something" type="text" >
 <button>Test</button>
 
@@ -20,6 +20,8 @@
     <li id="l3">ijse</li>
     <li class="list">RWAD</li>
 </ul>
+
+<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, at!</h2>
 
 <script src="assets/js/jquery-3.7.0.min.js"></script>  <!--import jQuery libary-->
 
@@ -43,6 +45,8 @@
 
 
    /*----what we can put inside jQuery selector -------*/
+
+/*
     $('h1').css('color','green'); //select all h1 in the dom and apply the color(type selector)
 
     $('#para').css('font-size','30px'); //(id selector is also working)
@@ -52,6 +56,18 @@
     $('[id]').css('border','2px solid red'); //attribute selector
 
     $('li:first-child').css('color','blue');
+*/
+
+
+    //what about css combinators...? are they work with jQuery
+
+   $('body h1').css('color','pink'); //descendent combinator
+
+   $("ul>li").css('color','red');//child combinator
+
+   $('h2+p').css('color','green');//adjacent combinator
+
+   $('h1~h2').css('border','2px solid red');//general combinators
 
 </script>
 </body>
