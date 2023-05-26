@@ -45,7 +45,7 @@
 </ul>
 
 <button>Test</button>
-
+<script src="assets/js/jquery-3.7.0.min.js"></script>
 <script>
     // <!--By using  following methods we can  select DOM elements to be changed-->
 
@@ -59,16 +59,21 @@
         */
 
     /* remove element */
-    document.getElementById("h1ID").remove();
+    //document.getElementById("h1ID").remove();
+        $('#h1ID').remove();
 
     /* getting texts  */
-    document.getElementsByClassName("h1Clz")[0].innerText;
+    //document.getElementsByClassName("h1Clz")[0].innerText;
+        $('.h1Clz').eq(0).text();
 
     /* changing texts */
-    document.getElementsByClassName("h1Clz")[0].innerText="Text changed";
+    //document.getElementsByClassName("h1Clz")[0].innerText="Text changed";
+        $('.h1Clz').eq(0).text('Text changed');
+
 
     /* changing styles */
-    document.getElementsByClassName("h1Clz")[0].style.color="blue";
+    //document.getElementsByClassName("h1Clz")[0].style.color="blue";
+        $('.h1Clz').eq(0).css('color','blue');
 
     /* ---------  how to get src(attr) values
 
@@ -80,12 +85,17 @@
     /*  how to get a value form text fields    */
 
     //document.querySelector('input').value("C001"); ---> setting values
+            $('input').val('C001');
     //document.querySelector('input').value; -----> getting values
-
+            $('input').val();
 
     /* how to write  an event for a button
         document.querySelector('button').addEventListener('click',function (){
             alert("How are you")
+        });
+
+        $('button').click(funstion(){
+            alert("J=HOW ARE YOU);
         });
     */
 
@@ -95,22 +105,29 @@
     //02.then select the input field and then get the typed text
     //03.select the image and then set the typed value for the src attribute
 
-    document.querySelector('button').addEventListener('click',function (){
+   /* document.querySelector('button').addEventListener('click',function (){
         document.querySelector('img').setAttribute("src",document.querySelector('input').value);
     });
 
+    */
+    $('button').click(function (){
+        $('img').attr('src',$('input').val());
+    });
 
-    document.querySelector('#type').addEventListener("keyup",function (){
+/*    document.querySelector('#type').addEventListener("keyup",function (){
         //document.querySelector("#type").value; //return typed value in the text field
 
         //console.log(document.querySelector("#type").value);
 
 
         //select h1 and set  the typed text of input field
+
         document.querySelector("h1").innerText=document.querySelector("#type").value;
-    });
+    });*/
 
-
+        $('#type').keyup(function () {
+           $('h1').text($(#type).val());
+        });
 
 
     /*  ----  Image hiding case  ---- */
@@ -125,7 +142,7 @@
         document.getElementById('btnthree');*/
 
     //02.bind click event for those buttons
-    document.getElementById('btnone').addEventListener('click',function (){
+    /*document.getElementById('btnone').addEventListener('click',function (){
         document.getElementById("imgone").style.visibility='hidden';
         document.getElementById("imgtwo").style.visibility='visible';
         document.getElementById("imgthree").style.visibility='visible';
@@ -143,7 +160,30 @@
         document.getElementById("imgthree").style.visibility='hidden';
 
 
-    });
+    });*/
+
+
+    // refactored jQuery
+    $('#btnone').click(function () {
+        $('#imgone').css('visibility','hidden');
+        $('#imgtwo').css('visibility','visible');
+        $('#imgthree').css('visibility','visible');
+    })
+
+    $('#btntwo').click(function () {
+        $('#imgtwo').css('visibility','hidden');
+        $('#imgone').css('visibility','visible');
+        $('#imgthree').css('visibility','visible');
+    })
+
+    $('#btnthree').click(function () {
+        $('#imgthree').css('visibility','hidden');
+        $('#imgtwo').css('visibility','visible');
+        $('#imgone').css('visibility','visible');
+    })
+
+
+
 
 
 
