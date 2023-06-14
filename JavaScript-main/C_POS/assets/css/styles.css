@@ -55,7 +55,7 @@ div.form-group label{
     font-size: 13px;
 }
 #total-text1{
-    color: #ef5350;
+    color: #0fd9e0;
     font-size: 13px;
 }
 section.content-box-2 label{
@@ -69,7 +69,7 @@ div.form-group label{
 }
 
 .control-error {
-    color: red;
+    color: #0a2ee5;
     font-size: 0.9em;
     /*display: none;*/
 }
