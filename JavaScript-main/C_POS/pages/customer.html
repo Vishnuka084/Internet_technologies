@@ -141,11 +141,19 @@
         //print values with an alert
         //alert(   $("#txtCustomerID").val());
         //alert( $("#txtCustomerName").val());*/
-        alert(customerID+" "+customerName+" "+customerAddress+" "+customerSalary);
+       // alert(customerID+" "+customerName+" "+customerAddress+" "+customerSalary);
 
         //put all of  these values inside a named container
         //customer
 
+        let customerObject = {
+            id : customerID,
+            name: customerName,
+            address: customerAddress,
+            salary: customerSalary
+        }
+
+        console.log(customerObject);
 
     })
 </script>
