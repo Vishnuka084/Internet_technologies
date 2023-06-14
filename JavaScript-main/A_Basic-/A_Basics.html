@@ -198,8 +198,9 @@
             // how to define a String in js
             // we have two ways
 
-    var myNames ="Hello js";
+    var myName ="Hello js";
     var myAddress="No, 16 , Panadura";
+    var myNames = "Daffsg,kasun,pavan,ravan"
     var mySalary= "       Ten thousand Five Hundred      ";
     console.log( typeof myNames);
     console.log( typeof myAddress);
@@ -208,14 +209,14 @@
     //string related methods that you can use
 
     //length( property )
-    console.log(myNames.length);
+    console.log(myName.length);
 
     //toUpperCase
-    console.log(myNames.toUpperCase());
+    console.log(myName.toUpperCase());
 
 
     //toLowerCase
-    console.log(myNames.toLowerCase());
+    console.log(myName.toLowerCase());
 
     //trimLeft(can remove the white spaces of from left side)
     console.log(mySalary.trimLeft());
@@ -224,10 +225,19 @@
 
     //trim(remove all the white spaces from )
     console.log(mySalary.trim());
+
     //split
-    //charAt
-    //charCodeAt
+    console.log(myNames.split(','));
+
+    //charAt -> by giving the index number we can return  the character of the string
+    console.log(myName.charAt(1));
+
+    //charCodeAt -> return the character code after giving the index number
+    console.log(myName.charCodeAt(0));
+
     //indexOf
+    console.log(myName.indexOf("H"));
+
     //substr
     //substring
 
