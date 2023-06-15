@@ -353,105 +353,128 @@
         01 - literal Base Arrays
         02 - Function Base Arrays
 
+    //
+    //     01 >>>Literal Base Array */
+    // var myNames = ['Kasun','pavan','siril','chamal'];
+    //             //  0       1       2       3
+    //
+    // //how to  get values .?
+    //
+    // myNames[1];// we can get values by index number
+    // console.log(myNames[0]);
+    // console.log(myNames[1]);
+    // console.log(myNames[2]);
+    // console.log(myNames[3]);
+    //
+    //
+    // //  02 >>>Function Base Array
+    // var ages = new Array(10,20,30,40,50); //this array has been created using Array Function
+    //
+    // //how to access values from this  ..?
+    // console.log(ages[0]);
+    // console.log(ages[1]);
+    // console.log(ages[2]);
+    // console.log(ages[3]);
+    // console.log(ages[4]);
+    //
+    //
+    // var customers = [];
+    //
+    // // add Customer name
+    //
+    // //Array Related Methods, we can use these methods to manipulate arrays
+    // /*
+    // * push();
+    // * pop();
+    // * shift();
+    // * unshift();
+    // * slice();
+    // * splice();
+    // * reverse();
+    // * sort();
+    // * length();
+    // * indexOf();
+    // * */
+    //
+    //
+    // //push [ add values to the last index ]
+    // customers.push("A");
+    // customers.push("B");
+    // customers.push("C");
+    // customers.push("D");
+    // customers.push("E");
+    // customers.push("F");
+    // customers.push("G");
+    // console.log(customers);
+    //
+    // //pop  [ Remove the last indexed value  of thr arrays ]
+    // customers.pop(); // G
+    // customers.pop(); //F
+    // console.log(customers);
+    //
+    //
+    // //shift [remove the first indexed value of the arrays ]
+    // customers.shift();
+    // customers.shift();
+    // console.log(customers);
+    //
+    // //unshift [Add value to the first index of an arrays ]
+    // customers.unshift("B");
+    // customers.unshift("A");
+    // customers.unshift("Z");
+    // console.log(customers);
+    //
+    //
+    // //slice [can copy array values to another array  ]
+    // var newArray = customers.slice(0.,4);
+    // console.log(newArray);
+    //
+    // //splice [can remove array values from anywhere we want ]
+    // //lets remove B
+    // //index of B is 2
+    // customers.splice(2,1);
+    // console.log(customers);
+    //
+    //
+    // //reverse [ reverse arrays]
+    // console.log(customers.reverse());
+    //
+    // //sort [can sort values in array]
+    // console.log(customers.sort());
+    //
+    // //length [can get the value count of an array]
+    // console.log(customers.length);
+    //
+    //
+    // //indexOf[return the index number of the E if there is available in the array ]
+    // console.log(customers);
+    // console.log(customers.indexOf("E"));
+    //
+    //
 
-        01 >>>Literal Base Array */
-    var myNames = ['Kasun','pavan','siril','chamal'];
-                //  0       1       2       3
-
-    //how to  get values .?
-
-    myNames[1];// we can get values by index number
-    console.log(myNames[0]);
-    console.log(myNames[1]);
-    console.log(myNames[2]);
-    console.log(myNames[3]);
 
 
-    //  02 >>>Function Base Array
-    var ages = new Array(10,20,30,40,50); //this array has been created using Array Function
+    // <<<<<<<<   Loops and Iteration in js
 
-    //how to access values from this  ..?
-    console.log(ages[0]);
-    console.log(ages[1]);
-    console.log(ages[2]);
-    console.log(ages[3]);
-    console.log(ages[4]);
+    //------for loop
+   /* for (var i=0; i<20; i++){
+        console.log(i);
+    }*/
 
-
-    var customers = [];
-
-    // add Customer name
-
-    //Array Related Methods, we can use these methods to manipulate arrays
-    /*
-    * push();
-    * pop();
-    * shift();
-    * unshift();
-    * slice();
-    * splice();
-    * reverse();
-    * sort();
-    * length();
-    * indexOf();
-    * */
+    //------while
+/*    var i = 0;
+    while(i<10){
+        i++;
+        console.log(i);
+    }*/
 
 
-    //push [ add values to the last index ]
-    customers.push("A");
-    customers.push("B");
-    customers.push("C");
-    customers.push("D");
-    customers.push("E");
-    customers.push("F");
-    customers.push("G");
-    console.log(customers);
-
-    //pop  [ Remove the last indexed value  of thr arrays ]
-    customers.pop(); // G
-    customers.pop(); //F
-    console.log(customers);
-
-
-    //shift [remove the first indexed value of the arrays ]
-    customers.shift();
-    customers.shift();
-    console.log(customers);
-
-    //unshift [Add value to the first index of an arrays ]
-    customers.unshift("B");
-    customers.unshift("A");
-    customers.unshift("Z");
-    console.log(customers);
-
-
-    //slice [can copy array values to another array  ]
-    var newArray = customers.slice(0.,4);
-    console.log(newArray);
-
-    //splice [can remove array values from anywhere we want ]
-    //lets remove B
-    //index of B is 2
-    customers.splice(2,1);
-    console.log(customers);
-
-
-    //reverse [ reverse arrays]
-    console.log(customers.reverse());
-
-    //sort [can sort values in array]
-    console.log(customers.sort());
-
-    //length [can get the value count of an array]
-    console.log(customers.length);
-
-
-    //indexOf[return the index number of the E if there is available in the array ]
-    console.log(customers);
-    console.log(customers.indexOf("E"));
-
-
-
+    //-----Do-while
+    /*var i = 0;
+    do {
+        console.log(i);
+    }while (i<10);
+*/
 </script>
 
 <!--second way-->
