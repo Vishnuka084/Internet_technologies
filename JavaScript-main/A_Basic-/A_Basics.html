@@ -455,6 +455,13 @@
 
 
     // <<<<<<<<   Loops and Iteration in js
+        /*
+        * for loop
+        * while loop
+        * Do while
+        * for in  [index number]
+        * for of [values ] */
+
 
     //------for loop
    /* for (var i=0; i<20; i++){
@@ -475,6 +482,30 @@
         console.log(i);
     }while (i<10);
 */
+
+
+    //lets get the values of an array using a for loop
+    var arrayOfAges = [10,20,30,40,50,60,70,80];
+
+    /*for (var i =0; i<arrayOfAges.length;i++ ){
+        console.log(arrayOfAges[i]);
+    }*/
+
+
+    //for of -> refer array value to the variable directly
+    for (var i of arrayOfAges){
+        console.log(i);
+    }
+
+    console.log("+++++++++++++");
+
+
+    //for in --> return index number of all the values
+    for (var i in arrayOfAges){
+        console.log(i,arrayOfAges[i]);
+    }
+
+
 </script>
 
 <!--second way-->
