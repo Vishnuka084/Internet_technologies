@@ -163,6 +163,8 @@
     });
 
     $('#btnGetAll').click(function (){
+        //remove all the table body content before adding data
+        $("#tblCustomer").empty();
         for (var customer of customers){
             console.log(customer);
 
@@ -180,6 +182,9 @@
     });
 
 
+    $('#btn-clear1').click(function (){
+
+    });
 
 
 
