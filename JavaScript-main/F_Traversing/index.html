@@ -7,9 +7,35 @@
 <body>
 <h1>Traversing With js </h1>
 
+<ul>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+</ul>
 
-
-
+<section>
+    <section>
+        <div>
+            <h1 id="D">Hello There How are you ..?</h1>
+        </div>
+    </section>
+</section>
 <script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+<script>
+
+    $("#D").click( function (){
+
+        Swal.fire(
+            'The Internet?',
+            'That thing is still around?',
+            'question'
+        )
+
+    });
+
+
+</script>
+
 </body>
 </html>
