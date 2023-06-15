@@ -160,7 +160,18 @@
         console.log(customers);
 
 
-    })
+    });
+
+    $('#btnGetAll').click(function (){
+        for (var customer of customers){
+            console.log(customer.id);
+        }
+    });
+
+
+
+
+
 </script>
 </body>
 </html>
