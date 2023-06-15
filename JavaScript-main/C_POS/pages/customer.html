@@ -156,14 +156,28 @@
             salary: customerSalary
         }
 
+
         customers.push(customerObject);
         console.log(customers);
 
+        /*$("#tblCustomer").empty();
+        for (var customer of customers){
+            console.log(customer);
+
+            // add those data to the table row
+            //var row ="<tr><th>"+customer.id+"</th><th>"+customer.name+"</th><th>"+customer.address+"</th><th>"+customer.salary+"</th></tr>";
+
+            var row =`<tr><th>${customer.id}</th><th>${customer.name}</th><th>${customer.address}</th><th>${customer.salary}</th></tr>`;
+
+            //then and it to the table body of customer table
+            $("#tblCustomer").prepend(row);
+        }*/
+
+        getAllValues();
 
     });
 
-    $('#btnGetAll').click(function (){
-        //remove all the table body content before adding data
+    function getAllValues(){
         $("#tblCustomer").empty();
         for (var customer of customers){
             console.log(customer);
@@ -176,7 +190,24 @@
             //then and it to the table body of customer table
             $("#tblCustomer").prepend(row);
         }
+    }
 
+    $('#btnGetAll').click(function (){
+        /*//remove all the table body content before adding data
+        $("#tblCustomer").empty();
+        for (var customer of customers){
+            console.log(customer);
+
+            // add those data to the table row
+            //var row ="<tr><th>"+customer.id+"</th><th>"+customer.name+"</th><th>"+customer.address+"</th><th>"+customer.salary+"</th></tr>";
+
+            var row =`<tr><th>${customer.id}</th><th>${customer.name}</th><th>${customer.address}</th><th>${customer.salary}</th></tr>`;
+
+            //then and it to the table body of customer table
+            $("#tblCustomer").prepend(row);
+        }*/
+
+        getAllValues();
 
 
     });
