@@ -127,9 +127,12 @@
 
 */
 
+    var customers = []; //global scope
 
     //select the save button and bind a click event for it
     $('#btnCustomer').click(function (){
+        //local scope   / function scope
+
 
         // select all the  four text fields and then get their typed values
       let customerID = $("#txtCustomerID").val();
@@ -152,8 +155,6 @@
             address: customerAddress,
             salary: customerSalary
         }
-
-        var customers = [];
 
         customers.push(customerObject);
         console.log(customers);
