@@ -164,8 +164,13 @@
 
     $('#btnGetAll').click(function (){
         for (var customer of customers){
-            console.log(customer.id);
+            console.log(customer);
+            var row ="<tr><th>"+customer.id+"</th><th>"+customer.name+"</th><th>"+customer.address+"</th><th>"+customer.salary+"</th></tr>";
+            $("#tblCustomer").prepend(row);
         }
+
+
+
     });
 
 
