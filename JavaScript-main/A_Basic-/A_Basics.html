@@ -509,20 +509,29 @@
  //- ---methods calling
     //getMyName();
 
-    function getMyData(){
+   /* function getMyData(){
         console.log("Hello World");
         console.log("Hiii");
     }
 
     getMyData();
     getMyData();
-
+*/
  //----- function hoisting
-    getMyAge(); //you can adn declare it later
+   /* getMyAge(); //you can adn declare it later
 
     function getMyAge(){
         console.log(10,20,30,40,50)
-    }
+    }*/
+
+
+
+    //usage of this inside an event
+    $('#tblCustomer>tr').click(function (){
+        console.log(this);
+    });
+
+
 </script>
 
 <!--second way-->
