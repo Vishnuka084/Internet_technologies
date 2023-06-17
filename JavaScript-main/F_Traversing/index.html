@@ -49,18 +49,29 @@
     </section>
 </section>
 <script src="assets/js/jquery-3.6.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
 <script>
 
-    $("#D").click( function (){
+    /*<<<<< ------ methods that we can use for traversing -------->>>>>>
+    *
+    * children();
+    * parent();
+    * parents();
+    * find();
+    * get();
+    * eq();
+    * children(":nth-child(1)")
+    * children(":eq(1));*/
 
-        Swal.fire(
-            'The Internet?',
-            'That thing is still around?',
-            'question'
-        )
 
-    });
+    //children()
+    $('body').children();;
+    //return all the root children of selected element
+
+    $('html').children();
+
+    //then how select one of the child
+    $('body').children('ul'); // select one from children
+
 
 
 </script>
