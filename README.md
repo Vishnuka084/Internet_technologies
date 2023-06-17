@@ -7,7 +7,7 @@ This to learn Internet Technology module in class  activities,
 - javaScript
 
 
-## POS System
+## In Class  POS System
 
 <img width="1680" alt="Screenshot 2023-06-14 at 12 28 01" src="https://github.com/Vishnuka084/Internet_technologies/assets/122769900/9758e27d-1def-441f-9026-3835b505b42e">
 <img width="1680" alt="Screenshot 2023-06-14 at 12 28 17" src="https://github.com/Vishnuka084/Internet_technologies/assets/122769900/3e10ac7f-bb55-404c-a54c-af0cea5225b0">
