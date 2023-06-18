@@ -228,13 +228,21 @@
     });*/
 
     //so let's print the row details which we clicked
-    $('#tblCustomer>tr').click(function (){
+    /*$('#tblCustomer>tr').click(function (){
         //how to get the row we click at the moment
         let rowData = $(this).text();//this will return the entire row text which is clicked
         console.log(rowData);
+    });*/
+
+
+    // so we don't want entire row text  we want only segregated data
+    $('#tblCustomer>tr').click(function (){
+        let id = $(this).children(":eq(0)").text();
+        let name = $(this).children(":eq(1)").text();
+        let address = $(this).children(":eq(2)").text();
+        let salary = $(this).children(":eq(3)").text();
+        console.log(id,name,address,salary);
     });
-
-
 
 
 </script>
