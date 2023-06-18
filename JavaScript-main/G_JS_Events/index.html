@@ -9,13 +9,14 @@
 <h1 onmouseenter="testMouseMove()">JS Events</h1>
 <ul>
     <li>Global Events</li>
-    <li>Specified Events</li>
+    <li id="se">Specified Events</li>
 </ul>
 <button onclick="alert('Global event')"> Test</button>
 <button onclick="testGlobalEvents()">Test 01</button>
 
 <script>
 
+    //Global Events
     function testGlobalEvents(){
         console.log("Hello there ...!")
     }
@@ -23,6 +24,14 @@
     function testMouseMove(){
         alert('mouse entered on h1');
     }
+
+    //specified event
+    let li = document.getElementById("se");
+    li.addEventListener('click',function (){
+       alert('Hello I am special event ')
+    });
+
+
 </script>
 
 
