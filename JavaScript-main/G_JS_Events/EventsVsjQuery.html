@@ -40,10 +40,26 @@
     //mouseup(function)
     //mousemove(function)
 
+
+//standard way
     $("#btnTest").on('dblclick',function (){
        alert("button double clicked ")
     });
 
+// Normalized way
+    $("#btnTest").dblclick(function (){
+       alert('btn double clicked 2nd ');
+    });
+
+    $('button').focus(function (){
+      //alert("button double clicked ")
+        console.log("Button Focused ");
+    });
+
+    $('input').focus(function (){
+      //alert("button double clicked ")
+        console.log("Button Focused ");
+    });
 
 </script>
 
