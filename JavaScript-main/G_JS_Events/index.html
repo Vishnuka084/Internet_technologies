@@ -6,11 +6,24 @@
 </head>
 <body>
 
-<h1>JS Events</h1>
+<h1 onmouseenter="testMouseMove()">JS Events</h1>
+<ul>
+    <li>Global Events</li>
+    <li>Specified Events</li>
+</ul>
+<button onclick="alert('Global event')"> Test</button>
+<button onclick="testGlobalEvents()">Test 01</button>
 
+<script>
 
-<button>Test</button>
+    function testGlobalEvents(){
+        console.log("Hello there ...!")
+    }
 
+    function testMouseMove(){
+        alert('mouse entered on h1');
+    }
+</script>
 
 
 </body>
