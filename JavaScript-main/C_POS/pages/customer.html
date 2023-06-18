@@ -73,7 +73,10 @@
                 </tr>
                 </thead>
                 <tbody id="tblCustomer">
-
+                    <!--<td>C001</td>
+                    <td>Sunimal</td>
+                    <td>Mathara</td>
+                    <td>324444</td>-->
                 </tbody>
             </table>
         </div>
@@ -157,8 +160,10 @@
         }
 
 
+        //add the customer object to the array
         customers.push(customerObject);
-        console.log(customers);
+
+        //console.log(customers);
 
         /*$("#tblCustomer").empty();
         for (var customer of customers){
@@ -175,6 +180,7 @@
 
         LoadAllCustomer();
 
+        bindRowClickEvents();
     });
 
     function LoadAllCustomer(){
@@ -236,14 +242,23 @@
 
 
     // so we don't want entire row text  we want only segregated data
-    $('#tblCustomer>tr').click(function (){
+   /* $('#tblCustomer>tr').click(function (){
         let id = $(this).children(":eq(0)").text();
         let name = $(this).children(":eq(1)").text();
         let address = $(this).children(":eq(2)").text();
         let salary = $(this).children(":eq(3)").text();
         console.log(id,name,address,salary);
-    });
+    });*/
 
+    function bindRowClickEvents(){
+        $('#tblCustomer>tr').click(function (){
+            let id = $(this).children(":eq(0)").text();
+            let name = $(this).children(":eq(1)").text();
+            let address = $(this).children(":eq(2)").text();
+            let salary = $(this).children(":eq(3)").text();
+            console.log(id,name,address,salary);
+        });
+    }
 
 </script>
 </body>
