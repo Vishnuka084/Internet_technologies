@@ -109,11 +109,13 @@
 
 
     //so  can we select one element from this
-    $('#d').parents('div')
+   /* $('#d').parents('div')
     $('#d').parents(':eq(0)');
     $('#d').parents(':eq(1)');
-    $('#d').parents().eq(2);
+    $('#d').parents().eq(2);*/
 
+
+    $('#d').parents('section').eq(0).children(":eq(0)").children('h1').css('color','red');
 
     //find
 
