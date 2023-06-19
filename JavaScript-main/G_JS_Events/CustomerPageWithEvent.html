@@ -31,7 +31,7 @@
 <main class="container-fluid" id="customerContent">
     <section class="row">
         <div class="col-12 col-lg-4">
-            <h1>Customer Registration</h1>
+            <h1 id="heading">Customer Registration</h1>
 
             <div class="form-group">
                 <label for="txtCustomerID">Customer ID</label>
@@ -94,7 +94,7 @@
                 </tbody>
             </table>
         </div>
-        <h1 id="dis">Code</h1>
+<!--        <h1 id="dis">Code</h1>-->
     </section>
 </main>
 
@@ -185,6 +185,22 @@
         if (event.key == "Enter"){
                 $('#txtCustomerSalary').focus();
         }
+    });
+
+
+
+//   >>>>> what  we can do with mouse event
+    $("#heading").on('mousedown',function (){
+        console.log("Mouse  Down ")
+
+    });
+
+    $("#heading").on('mouseup',function (){
+        console.log("Mouse Up")
+    });
+
+    $("#heading").on('mousemove',function (){
+        console.log("Mouse Move ")
     });
 
 </script>
