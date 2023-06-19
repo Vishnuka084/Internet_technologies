@@ -158,18 +158,17 @@
          console.log("customer name field  keypress");
     });*/
 
-    function dublicate (event){
+
+// disable tab key of all four text filed using grouping selector in css
+    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on('keydown',function ( event ){
         if (event.key=="Tab"){
             event.preventDefault();
         }
-    }
+    });
 
 
     $('#txtCustomerID').on('keydown',function ( event ){
-        dublicate();
-        if (event.key=="Tab"){
-            event.preventDefault();
-        }
+
         //event.preventDefault();
         if (event.key == "Enter"){
                 $('#txtCustomerName').focus();
