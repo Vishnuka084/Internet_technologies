@@ -1,30 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Document Ready vs Window On Load </title>
+    <style>
+        h1 {
+            font-size: 100px;
+            color: white;
+            text-align: center;
+            background: red;
+        }
+    </style>
 </head>
 <body>
 
 <h1>Document Ready vs Window On load events</h1>
 
+<iframe src="http://ijse.lk" frameborder="0" width="100%" height="400px"></iframe>
 
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script>
 
-    $().ready(function (){
-        console.log("Document is ready ")
-    });
-
-    //alternative for above function
-    $(function (){
-        console.log("This is also demonstrate that denouement is ready")
-    });
-
-
+   //execute after all the content fully load
     $(window).on('load',function (){
         console.log("Window on load ");
     });
+
+
+    //run after just creating the dom
+    $(document).ready(function (){
+        console.log("Document is ready ")
+    });
+
+
+
+    //alternative for above function
+    // $(function (){
+    //     console.log("This is also demonstrate that denouement is ready")
+    // });
+
+
 
 </script>
 </body>
