@@ -158,8 +158,19 @@
          console.log("customer name field  keypress");
     });*/
 
+    function dublicate (event){
+        if (event.key=="Tab"){
+            event.preventDefault();
+        }
+    }
+
 
     $('#txtCustomerID').on('keydown',function ( event ){
+        dublicate();
+        if (event.key=="Tab"){
+            event.preventDefault();
+        }
+        //event.preventDefault();
         if (event.key == "Enter"){
                 $('#txtCustomerName').focus();
         }
