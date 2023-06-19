@@ -10,6 +10,7 @@
             text-align: center;
             background: red;
         }
+
     </style>
 </head>
 <body>
@@ -24,6 +25,8 @@
    //execute after all the content fully load
     $(window).on('load',function (){
         console.log("Window on load ");
+
+        $('#load').fadeOut(1000);
     });
 
 
@@ -31,7 +34,6 @@
     $(document).ready(function (){
         console.log("Document is ready ")
     });
-
 
 
     //alternative for above function
