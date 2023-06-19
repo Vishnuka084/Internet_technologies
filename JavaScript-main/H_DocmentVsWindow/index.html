@@ -12,9 +12,19 @@
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script>
 
+    $().ready(function (){
+        console.log("Document is ready ")
+    });
+
+    //alternative for above function
+    $(function (){
+        console.log("This is also demonstrate that denouement is ready")
+    });
 
 
-
+    $(window).on('load',function (){
+        console.log("Window on load ");
+    });
 
 </script>
 </body>
