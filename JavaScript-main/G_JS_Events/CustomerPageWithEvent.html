@@ -102,9 +102,18 @@
 <script src="assets/js/bootstrap.min.js"></script>
 
 <script>
-$('#btnCustomer').on('click',function (){
-    alert("Hello there .");
-});
+
+    //bind click event
+    $('#btnCustomer').on('click',function (){
+      alert("Hello there .");
+    });
+
+    // Bind double click event
+    $('#tblCustomer>tr').on('dblclick',function (){
+        $(this).remove();
+    });
+
+
 
 </script>
 </body>
