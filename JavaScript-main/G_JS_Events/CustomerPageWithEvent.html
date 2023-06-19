@@ -212,10 +212,20 @@
     //move text with mouse pointer
     $(window).on('mousemove',function (event){
         //console.log(event.pageX,event.pageY);
-
+/*
         $("#heading").css('top', event.pageY-100);
         $("#heading").css('left', event.pageX);
         $("#heading").css('position','absolute');
+        $("#heading").text(`X : ${event.pageX} and Y : ${event.pageY}`);
+        */
+
+        $("#heading").css({
+            'top': event.pageY-100,
+            'left': event.pageX,
+            'position':'absolute',
+            'font-size' : '20px'
+
+        });
         $("#heading").text(`X : ${event.pageX} and Y : ${event.pageY}`);
         /*$("#heading").css('width','content-width');
         $("#heading").css('height','content-height');
