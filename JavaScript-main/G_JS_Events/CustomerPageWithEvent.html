@@ -215,7 +215,10 @@
 
         $("#heading").css('top', event.pageY);
         $("#heading").css('left', event.pageX);
-        $("#heading").css('position','relative');
+        $("#heading").css('position','absolute');
+        $("#heading").css('width','content-width');
+        $("#heading").css('height','content-height');
+        $("#heading").css('display','inline-block');
 
 
     });
