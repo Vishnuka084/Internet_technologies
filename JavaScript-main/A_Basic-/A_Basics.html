@@ -589,14 +589,35 @@
 
     /*  < How to write regular expression using js
             * */
+    //
+    // var cusID=/^(C)[0-9]{3}$/; //this is a js literal (regex Literal)
+    // typeof cusID;//object
+    //
+    // // how to check a string with regex
+    // var result=cusID.test("C001");  //return boolean
+    //
+    // console.log(result);
+    //
+    //
+    //
 
-    var cusID=/^(C)[0-9]{3}$/; //this is a js literal (regex Literal)
-    typeof cusID;//object
 
-    // how to check a string with regex
-    var result=cusID.test("C001");  //return boolean
+    // ------ we can write a function in two types
 
-    console.log(result);
+    // ----function declaration
+    function getMyName(){
+        console.log("My Name is Dasun")
+    }
+    getMyName();
+
+    // -----Expression
+    // we can assign a function for a variable
+    //this is also a reason for demonstrating JS  has a first level Functions
+    let myAge=function (){
+        return 30;
+    }
+    myAge();
+
 
 </script>
 
