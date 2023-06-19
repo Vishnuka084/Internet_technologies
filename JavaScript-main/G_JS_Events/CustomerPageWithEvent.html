@@ -94,6 +94,7 @@
                 </tbody>
             </table>
         </div>
+        <h1 id="dis">Code</h1>
     </section>
 </main>
 
@@ -144,14 +145,16 @@
     });
 */
 
-    $('#txtCustomerID').on('keydown',function (){
-         console.log("customer ID field  keydown");
+    $('#txtCustomerID').on('keydown',function ( event ){
+        console.log("customer ID field  keydown");
+        console.log(event.key);//we can use event object properties to verify which keys we are pressing
+        $('#dis').text(event.key);
     });
 
     $('#txtCustomerName').on('keyup',function (){
          console.log("customer name field  keyup");
     });
-    $('#txtCustomerName').on('keypress',function (){
+    $('#txtCustomerName').on('keypress',function (){ //this event doesn't  work on all key
          console.log("customer name field  keypress");
     });
 
