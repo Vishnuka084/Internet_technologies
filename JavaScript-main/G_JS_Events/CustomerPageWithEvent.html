@@ -211,7 +211,13 @@
 
     //move text with mouse pointer
     $(window).on('mousemove',function (event){
-        console.log(event.pageX,event.pageY);
+        //console.log(event.pageX,event.pageY);
+
+        $("#heading").css('top', event.pageY);
+        $("#heading").css('left', event.pageX);
+        $("#heading").css('position','relative');
+
+
     });
 
 
