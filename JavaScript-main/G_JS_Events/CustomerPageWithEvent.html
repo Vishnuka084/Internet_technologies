@@ -162,6 +162,9 @@
     $('#txtCustomerID').on('keydown',function ( event ){
         $('#dis').text(event.key);
 
+        if (event.key == "Enter"){
+            alert("You pressed  enter key ")
+        }
 
 
     });
