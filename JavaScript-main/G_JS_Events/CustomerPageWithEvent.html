@@ -145,17 +145,25 @@
     });
 */
 
-    $('#txtCustomerID').on('keydown',function ( event ){
+/*    $('#txtCustomerID').on('keydown',function ( event ){
         console.log("customer ID field  keydown");
         console.log(event.key);//we can use event object properties to verify which keys we are pressing
         $('#dis').text(event.key);
-    });
+    });*/
 
-    $('#txtCustomerName').on('keyup',function (){
+/*    $('#txtCustomerName').on('keyup',function (){
          console.log("customer name field  keyup");
     });
     $('#txtCustomerName').on('keypress',function (){ //this event doesn't  work on all key
          console.log("customer name field  keypress");
+    });*/
+
+
+    $('#txtCustomerID').on('keydown',function ( event ){
+        $('#dis').text(event.key);
+
+
+
     });
 
 </script>
