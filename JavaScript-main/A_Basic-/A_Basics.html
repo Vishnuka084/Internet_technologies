@@ -683,6 +683,17 @@
     let output=createMessage(myName," is a software Developer..... !");
     console.log(output);
 
+
+    //we can return function in a function
+
+    function getMyData(){
+        return function  getMyData(){
+            console.log("My name is vishnuka")
+        }
+    }
+
+    getMyData()(); // how to call that returned  function
+
 </script>
 
 <!--second way-->
