@@ -630,6 +630,23 @@
     let output = calculateMyNumber(40,120);
     console.log(output);
 
+
+    //what about methods Overloading
+    // Is it working in js ...?
+
+    function getMyAddress(country){
+        console.log("second Methods Invoked with One Para");
+        console.log(country);
+    }
+
+    function getMyAddress(country,city){
+        console.log("First Methods Invoked with two Para");
+        console.log(country,city);
+
+    }
+
+    getMyAddress("Sri lanka" , "Galle");
+
 </script>
 
 <!--second way-->
