@@ -659,14 +659,29 @@
     //How argument work in js functions
     //in js all argument are stored in an  array called argument
 
-    function calculateMySalary(i,message){
+    /*function calculateMySalary(i,message){
         console.log(arguments);  // predefined variable to store params value
         console.log(arguments[0]); //we can access param values with index number using arguments array
         console.log("Methods Invoked",i,message) ;
     }
 
     calculateMySalary(10 ,20 ,89);
+*/
 
+    //we can pass a function as a argument
+
+        //this is also reason which, js  is known to have first class function
+        // we can pass functions as parameters of another function
+    function createMessage(content1,content2){
+        return content1()+content2();
+    }
+
+    function myName(){
+        return "Dasun";
+    }
+
+    let output=createMessage(myName," is a software Developer..... !");
+    console.log(output);
 
 </script>
 
