@@ -603,12 +603,15 @@
 
 
     // ------ we can write a function in two types
+    /*   01 .  Function Declaration
+    *    02 .  FUNCTION Expression
+    * */
 
     // ----function declaration
+    getMyName();
     function getMyName(){
         console.log("My Name is Dasun")
     }
-    getMyName();
 
     // -----Expression
     // we can assign a function for a variable
@@ -618,6 +621,14 @@
     }
     myAge();
 
+    // so what about  Function argument
+    // function arguments
+    function calculateMyNumber(i,s){
+        return i+s;
+    }
+
+    let output = calculateMyNumber(40,120);
+    console.log(output);
 
 </script>
 
