@@ -12,9 +12,11 @@
 <!--first method-->
 <!--here we have js. and you can interpret them-->
 <script>
+/*
 
     //single line comment
   alert("HELLO VISHNUKA");
+*/
 
   /*    multiline comment
          alert("Haiii" );
@@ -483,13 +485,14 @@
     }while (i<10);
 */
 
+/*
 
     //lets get the values of an array using a for loop
     var arrayOfAges = [10,20,30,40,50,60,70,80];
 
-    /*for (var i =0; i<arrayOfAges.length;i++ ){
+    /!*for (var i =0; i<arrayOfAges.length;i++ ){
         console.log(arrayOfAges[i]);
-    }*/
+    }*!/
 
 
     //for of -> refer array value to the variable directly
@@ -504,6 +507,7 @@
     for (var i in arrayOfAges){
         console.log(i,arrayOfAges[i]);
     }
+*/
 
 
  //- ---methods calling
@@ -608,7 +612,7 @@
     * */
 
     // ----function declaration
-    getMyName();
+   /* getMyName();
     function getMyName(){
         console.log("My Name is Dasun")
     }
@@ -619,22 +623,22 @@
     let myAge=function (){
         return 30;
     }
-    myAge();
+    myAge();*/
 
     // so what about  Function argument
     // function arguments
-    function calculateMyNumber(i,s){
+  /*  function calculateMyNumber(i,s){
         return i+s;
     }
 
     let output = calculateMyNumber(40,120);
     console.log(output);
 
-
+*/
     //what about methods Overloading
     // Is it working in js ...?
 
-    function getMyAddress(country){
+  /*  function getMyAddress(country){
         console.log("second Methods Invoked with One Para");
         console.log(country);
     }
@@ -645,7 +649,21 @@
 
     }
 
-    getMyAddress("Sri lanka" , "Galle");
+    getMyAddress("Sri lanka" , "Galle");*/
+    //Here overloading is not supporting
+    //when there are two or more methods with the same
+    // name it  gets the last methods
+
+
+
+    //How argument work in js functions
+    function calculateMySalary(){
+        console.log(arguments);
+        console.log("Methods Invoked")
+    }
+
+    calculateMySalary(10 ,20 ,89);
+
 
 </script>
 
