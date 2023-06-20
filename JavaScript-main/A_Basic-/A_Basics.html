@@ -657,9 +657,12 @@
 
 
     //How argument work in js functions
-    function calculateMySalary(){
-        console.log(arguments);
-        console.log("Methods Invoked")
+    //in js all argument are stored in an  array called argument
+
+    function calculateMySalary(i,message){
+        console.log(arguments);  // predefined variable to store params value
+        console.log(arguments[0]); //we can access param values with index number using arguments array
+        console.log("Methods Invoked",i,message) ;
     }
 
     calculateMySalary(10 ,20 ,89);
