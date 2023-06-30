@@ -5,7 +5,7 @@ This to learn Internet Technology module in class  activities,
 - css
 - Boostrap
 - javaScript
-
+- Boostrap 
 
 ## In Class  POS System
 
