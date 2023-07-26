@@ -6,26 +6,38 @@
     <link rel="stylesheet" href="assets/jquery-ui.min.css">
     <style>
 
-        div{
+        #mainDiv{
             width: 200px;
             height: 200px;
             background-color: red;
         }
 
 
+        #subDiv{
+            width: 150px;
+            height: 150px;
+            background-color: #d36b22;
+        }
 
 
     </style>
 </head>
 <body>
 
-<div ></div>
+<div id="mainDiv"></div>
+<div id="subDiv"></div>
 
 
 <script src="assets/jquery-3.7.0.min.js"></script>
 <script src="assets/jquery-ui.min.js"></script>
 <script>
+    $( "#subDiv" ).draggable();
+    $( "#mainDiv" ).droppable({
+        drop: function( event, ui ) {
+            $( this ).css('background','green');
 
+        }
+    });
 
 </script>
 
