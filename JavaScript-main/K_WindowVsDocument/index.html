@@ -10,7 +10,19 @@
 <iframe src="http://ijse.lk" frameborder="0" width="100%" height="300px"></iframe>
 
 <script>
+    $(function (){
+        console.log("Document Loaded");
+    });
 
+    $(document).ready(function (){
+        console.log("Document Ready");
+    });
+
+
+
+    $(window).on('load',function (){
+        console.log("window Loading");
+    });
 
 </script>
 </body>
