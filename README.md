@@ -8,7 +8,7 @@ This to learn Internet Technology module in class  activities,
 - Boostrap
 - jQuery Ui
 - jQuery plugin
-- Ajax
+- Ajax 1
   
 
 ## In Class  POS System
