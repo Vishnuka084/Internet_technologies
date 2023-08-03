@@ -12,8 +12,17 @@
 
 <script src="assets/jQuery/jquery-3.7.0.min.js"></script>
 <script>
+
     $("#btn").click(function (){
-        alert("btn click Works");
+
+        var http=new XMLHttpRequest();
+        http.open(
+            "GET",
+            "abcd"
+        );
+        http.send();
+
+
     });
 
 </script>
