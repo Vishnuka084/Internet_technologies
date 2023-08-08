@@ -16,12 +16,21 @@
     $("#btn").click(function (){
 
         var http=new XMLHttpRequest();
+        console.log(http.status,"After the XHLHttpRequest Object Created");
+
         http.open(
             "GET",
             "db/db.txt"
         );
+        console.log(http.status,"After the send Methods Text methods");
+
+
         console.log(http.responseText);
+        console.log(http.status,"After the XHLHttpRequest Object Created");
+
+
         http.send();
+        console.log("Request Send");
 
 
     });
