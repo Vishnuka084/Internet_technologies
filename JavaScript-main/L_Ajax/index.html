@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Ajax Implementation</title>
-</head>
-<body>
+
+<!--<body>
 <h1>Hello Ajax ....!</h1>
 <h2>Let's  implementation Ajax with XMLHTTPRequest Object </h2>
 <button id="btn" type="button">Send A Requset </button>
@@ -35,6 +35,116 @@
 
     });
 
+</script>-->
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body>div{
+        border: 2px solid black;
+        width: max-content;
+        height: 500px;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    button{
+        margin: auto;
+
+        background-color: #1d1df6;
+        border: #1d1df6;
+
+        height: 30px;
+        border-radius: 5px;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+
+    button:active{
+        cursor: pointer;
+        background-color: #6e6efa;
+    }
+
+    body>div>div{
+        margin: auto;
+        padding: 10px;
+        border: 2px solid #48c74e;
+    }
+
+    p{
+        color: #4bd27b;
+    }
+
+    h1{
+        color: #00007c;
+    }
+</style>
+</head>
+<body>
+<div>
+    <h1>Hello AJAX</h1>
+    <h2>Sent Request using AJAX</h2>
+    <h3>Let's implement the XMLHTTPRequest Object</h3>
+    <button id="btn" type="button">sent a request</button>
+    <div>
+        <p id="content"></p>
+    </div>
+</div>
+
+<script src="assets/jQuery/jquery-3.7.0.min.js"></script>
+<script>
+    $('#btn').click(function (){
+
+        console.log("Request Start");
+
+        var http=new XMLHttpRequest();
+        console.log(http.status," After create XMLHttpRequest Object ", http.readyState);//uninitialized
+
+        // http.open("GET","k.html");
+        // http.open("GET","https://www.ijse.lk/");
+
+        http.open("GET","db/db.txt",false);//false = synchronous (blocking) || (default)true = asynchronous (unblocking)
+        console.log(http.status," After open method invoked ", http.readyState);//loading
+
+        console.log(http.responseText);
+        console.log(http.status," After response text print ", http.readyState);//loading
+
+        http.send();
+        console.log(http.status," After sent text method invoked ", http.readyState);
+
+        // http.onreadystatechange = function (){
+        //     // console.log("ready state : "+http.readyState," states : "+http.status," Inside ready State change event",http.responseText);//loaded,interactive,complete
+        //     if(http.readyState==4 && http.status== 200){
+        //         console.log("ready state : "+http.readyState," states : "+http.status," Inside ready State change event");//complete
+        //         console.log(http.responseText);
+        //         $('#content').text(http.responseText);
+        //     }
+        //
+        // }
+
+        console.log(http.responseText);
+        console.log("Request finished");
+    })
 </script>
 </body>
 </html>
