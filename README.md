@@ -1,11 +1,11 @@
 # Internet_technologies
-This to learn Internet Technology module in class  activities,
+This is to learn the Internet Technology module in-class  activities,
 
 - html
-- css
-- Boostrap
+- CSS
+- Bootstrap
 - javaScript
-- Boostrap
+- Bootstrap
 - jQuery Ui
 - jQuery plugin
 - Ajax 
